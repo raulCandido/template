@@ -1,4 +1,4 @@
-package candido.spring.template
+package candido.template
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
