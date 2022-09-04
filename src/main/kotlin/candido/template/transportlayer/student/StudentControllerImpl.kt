@@ -2,7 +2,6 @@ package candido.template.transportlayer.student
 
 import candido.template.core.student.Student
 import candido.template.core.student.StudentController
-import candido.template.datasource.student.StudentServiceImpl
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -19,5 +18,7 @@ class StudentControllerImpl(
     override fun getStudent(): List<Student> = service.getStudents()
 
     @PostMapping
-    fun saveStudent(@RequestBody student: StudentRequest): Student = service.saveStudent(student);
+    fun saveStudent(@RequestBody student: StudentRequest): Student = service.saveStudent(student)
+
+
 }
