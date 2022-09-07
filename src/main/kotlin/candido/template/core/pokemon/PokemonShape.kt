@@ -9,6 +9,4 @@ data class PokemonShape(
     @JsonProperty("awesome_names") val awesomeNameEntities: List<AwesomeName> = listOf(),
     @JsonProperty("names") val nameEntities: List<Name> = listOf(),
     @JsonProperty("pokemon_species") val pokemonSpecyEntities: List<PokemonSpecie> = listOf(),
-) {
-
-}
+)
