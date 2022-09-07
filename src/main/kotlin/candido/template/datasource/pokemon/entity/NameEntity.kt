@@ -4,12 +4,16 @@ import javax.persistence.*
 
 
 @Entity
+@Table(name = "name")
 data class NameEntity(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null,
+
     val name: String? = null,
 
     @OneToOne(cascade = [CascadeType.ALL])
+    @JoinColumn(name = "language_id", referencedColumnName = "id")
     val languageEntity: LanguageEntity? = null,
 )
